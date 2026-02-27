@@ -1,41 +1,41 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import ProductDemo from '../components/ProductDemo';
+import ExamRoomDemo from '../components/ExamRoomDemo';
 
 export default function Home() {
   const features = [
     {
-      icon: '🎯',
-      title: 'Turnkey Solutions',
-      description: 'Complete hardware, software, and installation. We handle everything from screens to content to setup.',
+      icon: '🫀',
+      title: '3D Anatomy Visualization',
+      description: 'Interactive 3D models help patients understand their anatomy, conditions, and procedures with crystal-clear visual explanations.',
     },
     {
-      icon: '✨',
-      title: 'Easy Content Management',
-      description: 'Update your displays anytime, anywhere with our intuitive CMS. No IT team required.',
+      icon: '📡',
+      title: 'Remote Collaboration',
+      description: 'Instantly share screens with remote specialists for real-time consultations, second opinions, and collaborative diagnosis.',
     },
     {
-      icon: '🚀',
-      title: 'Plug & Play',
-      description: 'Our systems work right out of the box. Simple setup, powerful results.',
+      icon: '🤖',
+      title: 'AI-Powered Documentation',
+      description: 'Automated visit summaries, transcription, and chart notes. Save providers 2+ hours daily on documentation.',
     },
     {
-      icon: '📈',
-      title: 'Scalable Platform',
-      description: 'Start with one screen or deploy across multiple locations. We grow with you.',
+      icon: '📋',
+      title: 'Standardized Care Protocols',
+      description: 'Deliver consistent, evidence-based care across all exam rooms with built-in clinical workflows and checklists.',
     },
   ];
 
-  const industries = [
-    { name: 'Healthcare & Clinics', icon: '🏥', color: 'from-blue-500 to-cyan-500' },
-    { name: 'Dental Practices', icon: '🦷', color: 'from-purple-500 to-pink-500' },
-    { name: 'Pediatric Offices', icon: '👶', color: 'from-green-500 to-emerald-500' },
-    { name: 'Corporate Offices', icon: '🏢', color: 'from-indigo-500 to-blue-500' },
-    { name: 'Retail & Showrooms', icon: '🛍️', color: 'from-orange-500 to-red-500' },
-    { name: 'Hospitality & Wellness', icon: '🧘', color: 'from-teal-500 to-cyan-500' },
-    { name: 'Libraries & Public Spaces', icon: '📚', color: 'from-violet-500 to-purple-500' },
-    { name: 'Auto Service Centers', icon: '🚗', color: 'from-red-500 to-orange-500' },
-    { name: 'Institutions & Training', icon: '🎓', color: 'from-pink-500 to-rose-500' },
+  const clinicalUseCases = [
+    { name: 'Standardized Care', icon: '📋', color: 'from-blue-500 to-cyan-500' },
+    { name: '3D Anatomy & Procedures', icon: '🫀', color: 'from-red-500 to-pink-500' },
+    { name: 'Remote Screen Share', icon: '📡', color: 'from-purple-500 to-indigo-500' },
+    { name: 'Patient Entertainment', icon: '🎬', color: 'from-green-500 to-emerald-500' },
+    { name: 'Patient Education', icon: '📚', color: 'from-orange-500 to-amber-500' },
+    { name: 'Digital Forms', icon: '📝', color: 'from-teal-500 to-cyan-500' },
+    { name: 'Patient Surveys', icon: '⭐', color: 'from-yellow-500 to-orange-500' },
+    { name: 'News & Weather', icon: '🌤️', color: 'from-sky-500 to-blue-500' },
+    { name: 'AI Scribe & Summary', icon: '🤖', color: 'from-violet-500 to-purple-500' },
   ];
 
   const fadeInUp = {
@@ -55,16 +55,16 @@ export default function Home() {
             <motion.div {...fadeInUp}>
               <div className="inline-block mb-4">
                 <span className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
-                  🚀 Transforming Spaces with Smart Displays
+                  🏥 Revolutionary Exam Room Technology
                 </span>
               </div>
               <h1 className="heading-1 mb-6 bg-gradient-to-r from-primary-600 via-accent-600 to-primary-700 bg-clip-text text-transparent">
-                Engage. Educate. Scale.
+                Transform Your Exam Rooms with Interactive Touchscreen Technology
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Turnkey interactive display solutions that transform waiting rooms, lobbies, 
-                and showrooms into engaging experiences. From healthcare to retail, we bring 
-                your space to life.
+                Empower healthcare providers and patients with all-in-one touchscreen solutions. 
+                From 3D anatomy visualization to AI-powered documentation, standardize care and 
+                enhance every patient interaction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-primary">
@@ -76,25 +76,25 @@ export default function Home() {
               </div>
               <div className="mt-8 flex items-center gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-primary-600">500+</div>
-                  <div className="text-sm text-gray-600">Deployments</div>
+                  <div className="text-3xl font-bold text-primary-600">1000+</div>
+                  <div className="text-sm text-gray-600">Exam Rooms</div>
                 </div>
                 <div className="h-12 w-px bg-gray-300"></div>
                 <div>
-                  <div className="text-3xl font-bold text-accent-600">9+</div>
-                  <div className="text-sm text-gray-600">Industries Served</div>
+                  <div className="text-3xl font-bold text-accent-600">9</div>
+                  <div className="text-sm text-gray-600">Clinical Use Cases</div>
                 </div>
               </div>
             </motion.div>
 
-            {/* Right Content - Product Demo */}
+            {/* Right Content - Exam Room Demo */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <ProductDemo />
+              <ExamRoomDemo />
             </motion.div>
           </div>
         </div>
@@ -110,9 +110,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="heading-2 mb-4">Why Choose Tactyl.io?</h2>
+            <h2 className="heading-2 mb-4">Comprehensive Exam Room Solutions</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We make interactive displays simple, powerful, and effective for any space.
+              Everything you need to modernize patient care, streamline workflows, and enhance clinical outcomes.
             </p>
           </motion.div>
 
@@ -147,27 +147,27 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="heading-2 mb-4">Industries We Serve</h2>
+            <h2 className="heading-2 mb-4">9 Clinical Use Cases in One Platform</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From healthcare to hospitality, we create engaging experiences across diverse sectors.
+              From patient education to AI-powered documentation, transform every aspect of the exam room experience.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((industry, index) => (
+            {clinicalUseCases.map((useCase, index) => (
               <motion.div
-                key={industry.name}
+                key={useCase.name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${industry.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${useCase.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
                 <div className="p-6 relative">
-                  <div className="text-4xl mb-3">{industry.icon}</div>
+                  <div className="text-4xl mb-3">{useCase.icon}</div>
                   <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
-                    {industry.name}
+                    {useCase.name}
                   </h3>
                 </div>
               </motion.div>
@@ -182,7 +182,7 @@ export default function Home() {
             className="text-center mt-12"
           >
             <Link to="/use-cases" className="btn-primary">
-              View All Use Cases
+              Explore All 9 Clinical Use Cases
             </Link>
           </motion.div>
         </div>
@@ -199,10 +199,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="heading-2 mb-6">Ready to Transform Your Space?</h2>
+            <h2 className="heading-2 mb-6">Ready to Transform Your Exam Rooms?</h2>
             <p className="text-xl mb-8 text-primary-50">
-              Get a free consultation and see how Tactyl.io can enhance your customer experience, 
-              educate your audience, and modernize your brand.
+              Join 1000+ exam rooms using Tactyl.io to enhance patient care, streamline workflows, 
+              and empower healthcare providers with cutting-edge interactive technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

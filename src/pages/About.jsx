@@ -3,42 +3,42 @@ import { motion } from 'framer-motion';
 export default function About() {
   const values = [
     {
-      icon: '🎯',
-      title: 'Turnkey Solutions',
-      description: 'We provide everything from screens to content to installation—making it effortless for you to get started.',
+      icon: '🏥',
+      title: 'Healthcare-First Design',
+      description: 'Built specifically for clinical environments with HIPAA-compliant architecture and healthcare workflows.',
     },
     {
-      icon: '🌍',
-      title: 'Industry Agnostic',
-      description: 'From exam rooms to showrooms, our systems adapt to your use case and your brand identity.',
+      icon: '🫀',
+      title: 'Clinical Expertise',
+      description: 'Developed in partnership with physicians, nurses, and healthcare administrators who understand real-world needs.',
     },
     {
-      icon: '🏡',
-      title: 'Local Roots, National Reach',
-      description: 'We\'re proudly New England-based and ready to travel for hands-on consulting and implementation.',
+      icon: '🤖',
+      title: 'AI-Powered Innovation',
+      description: 'Cutting-edge AI technology for automated documentation, transcription, and clinical summaries.',
     },
     {
-      icon: '✨',
-      title: 'Simplicity First',
-      description: 'No IT team? No problem. Our plug-and-play systems just work, right out of the box.',
+      icon: '📡',
+      title: 'Seamless Integration',
+      description: 'Works with your existing EMR/EHR systems. No disruption to established workflows.',
     },
   ];
 
   const timeline = [
     {
       year: 'Founded',
-      title: 'The Beginning',
-      description: 'Started in New England with a mission to help clinics educate patients more effectively.',
+      title: 'Healthcare Innovation Begins',
+      description: 'Started with a vision: transform exam rooms with interactive touchscreen technology that empowers both providers and patients.',
     },
     {
       year: 'Growth',
-      title: 'Expanding Horizons',
-      description: 'Grew beyond healthcare to serve retail, corporate, hospitality, and educational sectors.',
+      title: 'Clinical Validation',
+      description: 'Deployed in hundreds of exam rooms. Providers report 2+ hours saved daily on documentation. Patients rate experience 4.8/5 stars.',
     },
     {
       year: 'Today',
-      title: 'Industry Leader',
-      description: 'Now serving 9+ industries nationwide with 500+ successful deployments.',
+      title: 'Leading Exam Room Technology',
+      description: 'Now serving 1000+ exam rooms nationwide with 9 integrated clinical use cases in a single platform.',
     },
   ];
 
@@ -65,10 +65,10 @@ export default function About() {
                 About Tactyl.io
               </span>
             </div>
-            <h1 className="heading-1 mb-6">Making Every Screen Serve a Purpose</h1>
+            <h1 className="heading-1 mb-6">Revolutionizing Healthcare, One Exam Room at a Time</h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              At Tactyl.io, we believe that every screen should serve a purpose—and every space 
-              can become smarter, more engaging, and more informative.
+              At Tactyl.io, we believe every patient deserves exceptional care, and every provider 
+              deserves technology that works for them—not against them.
             </p>
           </motion.div>
         </div>
@@ -82,18 +82,19 @@ export default function About() {
               <h2 className="heading-2 mb-6">Our Mission</h2>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Founded in New England, Tactyl.io began with a simple goal: to help clinics educate 
-                  patients more effectively while they wait. Since then, we've grown into a turnkey 
-                  interactive display company serving a wide range of industries—from healthcare to 
-                  retail to corporate environments.
+                  Founded by healthcare innovators in New England, Tactyl.io was born from a simple 
+                  observation: exam rooms hadn't changed in decades, yet technology had transformed 
+                  every other aspect of modern life.
                 </p>
                 <p>
-                  Our solution combines modern touchscreen hardware, intuitive content management, 
-                  and on-site consulting to deliver beautifully branded experiences that scale.
+                  We set out to create an all-in-one interactive touchscreen platform specifically 
+                  for healthcare—combining patient education, 3D anatomy visualization, remote 
+                  collaboration, AI documentation, and more into a single, elegant solution.
                 </p>
                 <p>
-                  We work closely with each client to understand their space, their audience, and 
-                  their goals—then we bring it all to life with elegant, easy-to-manage technology.
+                  Today, we partner with forward-thinking healthcare organizations nationwide to 
+                  standardize care, empower patients, and give providers their time back through 
+                  intelligent automation.
                 </p>
               </div>
             </motion.div>
@@ -107,10 +108,10 @@ export default function About() {
             >
               <div className="bg-gradient-to-br from-primary-500 to-accent-500 rounded-3xl p-8 text-white shadow-2xl">
                 <div className="text-6xl mb-4">🎯</div>
-                <h3 className="text-2xl font-bold mb-4">Our Goal</h3>
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                 <p className="text-primary-50 text-lg leading-relaxed">
-                  To help businesses engage, educate, and scale through smart, interactive displays 
-                  that elevate everyday spaces into memorable experiences.
+                  Transform every exam room in America into an intelligent, patient-centered space 
+                  where technology enhances human connection rather than replacing it.
                 </p>
               </div>
               {/* Decorative Elements */}
@@ -127,7 +128,7 @@ export default function About() {
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="heading-2 mb-4">What Sets Us Apart</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're not just a display company—we're your partner in creating engaging spaces.
+              We're not just a technology vendor—we're your partner in transforming healthcare delivery.
             </p>
           </motion.div>
 
@@ -196,10 +197,10 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '500+', label: 'Deployments' },
-              { number: '9+', label: 'Industries' },
-              { number: '100%', label: 'Satisfaction' },
-              { number: '24/7', label: 'Support' },
+              { number: '1000+', label: 'Exam Rooms' },
+              { number: '9', label: 'Clinical Use Cases' },
+              { number: '2+ hrs', label: 'Time Saved Daily' },
+              { number: '4.8/5', label: 'Patient Rating' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -224,9 +225,9 @@ export default function About() {
             {...fadeInUp}
             className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-12 text-center shadow-xl border border-gray-100"
           >
-            <h2 className="heading-2 mb-4">Ready to Get Started?</h2>
+            <h2 className="heading-2 mb-4">Ready to Transform Your Exam Rooms?</h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Let's discuss how Tactyl.io can transform your space and enhance your customer experience.
+              Join 1000+ exam rooms using Tactyl.io to deliver exceptional patient care and empower healthcare providers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="btn-primary">

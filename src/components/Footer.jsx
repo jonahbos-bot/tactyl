@@ -16,8 +16,8 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">Tactyl.io</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Turnkey interactive display solutions for healthcare, retail, corporate, and more. 
-              Engage, Educate & Scale with smart touchscreen technology.
+              Revolutionary interactive touchscreen technology for exam rooms. 
+              Empower providers, engage patients, and transform healthcare delivery.
             </p>
             <p className="text-sm text-gray-500">
               Founded in New England • Serving Nationwide
@@ -51,16 +51,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Industries */}
+          {/* Clinical Use Cases */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Industries</h3>
+            <h3 className="text-white font-semibold mb-4">Clinical Use Cases</h3>
             <ul className="space-y-2 text-sm">
-              <li>Healthcare & Clinics</li>
-              <li>Dental Practices</li>
-              <li>Corporate Offices</li>
-              <li>Retail & Showrooms</li>
-              <li>Hospitality & Wellness</li>
-              <li>Educational Institutions</li>
+              <li>Standardized Care</li>
+              <li>3D Anatomy</li>
+              <li>Remote Collaboration</li>
+              <li>Patient Education</li>
+              <li>AI Documentation</li>
+              <li>Digital Forms</li>
             </ul>
           </div>
         </div>

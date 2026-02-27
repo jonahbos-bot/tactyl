@@ -4,143 +4,152 @@ import { motion, AnimatePresence } from 'framer-motion';
 export default function UseCases() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Healthcare', 'Business', 'Retail', 'Education'];
+  const categories = ['All', 'Clinical Workflows', 'Patient Engagement', 'Provider Tools', 'Documentation'];
 
   const useCases = [
     {
-      category: 'Healthcare',
-      icon: '🏥',
-      title: 'Healthcare & Clinics',
-      subtitle: 'Every Visit, More Valuable',
-      description: 'Educate and calm patients with touchscreen videos, care tips, and dual-purpose screens in exam and waiting rooms.',
+      category: 'Clinical Workflows',
+      icon: '📋',
+      title: 'Standardized Care Protocols',
+      subtitle: 'Consistent, Evidence-Based Care',
+      description: 'Deliver standardized care across all exam rooms with built-in clinical protocols, checklists, and workflows.',
       features: [
-        'Display rotating wellness tips on heart health, diabetes, nutrition, mental health',
-        'Deliver post-visit instructions automatically',
-        'Run seasonal campaigns for flu shots or blood pressure checks',
-        'Extend your desktop to review charts or imaging with patients',
+        'Pre-loaded evidence-based care protocols for common conditions',
+        'Interactive checklists ensure nothing is missed during exams',
+        'Customizable workflows specific to your practice specialties',
+        'Real-time guidance for providers on best practices',
+        'Audit trails for compliance and quality assurance',
       ],
-      benefits: 'Patients leave with better understanding. Fewer follow-up questions. You create an experience that\'s personal, modern, and proactive.',
-      color: 'from-blue-500 to-cyan-500',
+      benefits: 'Reduces practice variation. Ensures every patient receives consistent, high-quality care. Improves clinical outcomes and reduces liability risk.',
+      color: 'from-blue-600 to-cyan-600',
     },
     {
-      category: 'Healthcare',
-      icon: '🦷',
-      title: 'Dental Practices',
-      subtitle: 'Calm. Educate. Build Trust.',
-      description: 'Dental visits make many patients anxious—especially kids and first-timers. Tactyl.io helps you put them at ease while delivering valuable oral health education.',
+      category: 'Patient Engagement',
+      icon: '🫀',
+      title: '3D Anatomy & Procedure Visualization',
+      subtitle: 'See It. Understand It. Remember It.',
+      description: 'Interactive 3D anatomical models help patients truly understand their bodies, conditions, and treatment options.',
       features: [
-        'Play animated explainers of cleanings, fillings, braces, and more',
-        'Highlight cosmetic services like whitening or Invisalign',
-        'Use QR codes to promote reviews, follow-up care, or appointment booking',
-        'Let hygienists and dentists use the screen to show x-rays or discuss care plans',
+        'Comprehensive 3D anatomical library (skeletal, muscular, cardiovascular, digestive systems)',
+        'Touch to rotate, zoom, and explore structures from any angle',
+        'Procedure animations show step-by-step surgical and diagnostic processes',
+        'Highlight specific areas to explain pathology or surgical approaches',
+        'Side-by-side comparisons of healthy vs. diseased anatomy',
       ],
-      benefits: 'Patients are more relaxed and informed before they ever sit in the chair. Staff save time on repetitive explanations.',
-      color: 'from-purple-500 to-pink-500',
+      benefits: 'Patients understand their conditions better, leading to improved compliance and satisfaction. Visual education reduces anxiety and builds trust.',
+      color: 'from-red-600 to-pink-600',
     },
     {
-      category: 'Healthcare',
-      icon: '👶',
-      title: 'Pediatric Offices',
-      subtitle: 'Happy Kids. Happier Parents.',
-      description: 'Waiting is hard for kids—and even harder for their parents. Tactyl.io turns your exam and waiting rooms into calm, engaging spaces that support your care.',
+      category: 'Provider Tools',
+      icon: '📡',
+      title: 'Remote Screen Share & Collaboration',
+      subtitle: 'Expert Consults, Instantly',
+      description: 'Connect with remote specialists, share screens, and collaborate on diagnosis in real-time without leaving the exam room.',
       features: [
-        'Play fun, educational videos (with no ads!) to hold attention',
-        'Rotate age-appropriate wellness tips (hydration, nutrition, sleep)',
-        'Encourage portal use, reviews, or flu shot signups with QR codes',
-        'Use the screen as an educational aid for visual learners',
+        'One-click screen sharing with remote specialists',
+        'Live video consultation with patient present',
+        'Share imaging, lab results, and patient records securely',
+        'Real-time annotations and markup tools',
+        'Recorded sessions for documentation and review',
       ],
-      benefits: 'Parents appreciate a stress-free visit. Kids are calm and entertained, not climbing the walls. Your clinic runs more smoothly—everyone wins.',
-      color: 'from-green-500 to-emerald-500',
+      benefits: 'Access specialist expertise immediately. Improved diagnostic accuracy. Reduced referral delays. Patients love seeing collaborative care in action.',
+      color: 'from-purple-600 to-indigo-600',
     },
     {
-      category: 'Business',
-      icon: '🏢',
-      title: 'Corporate Offices',
-      subtitle: 'Connect Teams. Communicate Clearly.',
-      description: 'Whether you\'re welcoming clients in the lobby or updating staff in a breakroom, digital displays streamline communication and build a stronger internal culture.',
+      category: 'Patient Engagement',
+      icon: '🎬',
+      title: 'Patient Entertainment',
+      subtitle: 'Reduce Anxiety, Improve Experience',
+      description: 'Calming, engaging content keeps patients comfortable and reduces perceived wait time.',
       features: [
-        'Broadcast company news, goals, HR announcements, and internal alerts',
-        'Display real-time dashboards, KPIs, or facility metrics',
-        'Schedule rotating updates by department, floor, or building',
-        'Customize displays to reflect your brand and tone',
+        'Curated content library: nature videos, music, documentaries',
+        'Patient-controlled content selection via touchscreen',
+        'Age-appropriate content filtering (pediatric vs. adult)',
+        'News, weather, and local information',
+        'Practice-branded content and welcome messages',
       ],
-      benefits: 'Employees stay aligned without relying on cluttered inboxes or static posters. Visitors get a polished first impression.',
-      color: 'from-indigo-500 to-blue-500',
+      benefits: 'Reduced patient anxiety. Shorter perceived wait times. Better patient experience scores. Happier patients are more compliant patients.',
+      color: 'from-green-600 to-emerald-600',
     },
     {
-      category: 'Retail',
-      icon: '🛍️',
-      title: 'Retail & Showrooms',
-      subtitle: 'Engage Customers. Guide Decisions.',
-      description: 'Customers want information, not pressure. Tactyl.io helps retail spaces and showrooms deliver helpful, branded content where it matters most.',
-      features: [
-        'Highlight daily deals, featured products, or how-to guides',
-        'Show product demos or customer testimonials',
-        'Push customers to loyalty programs or online reviews with QR codes',
-        'Keep visuals on-brand with seasonal or campaign-specific updates',
-      ],
-      benefits: 'Shoppers feel informed and confident. Your sales floor becomes more interactive—without more staff.',
-      color: 'from-orange-500 to-red-500',
-    },
-    {
-      category: 'Business',
-      icon: '🧘',
-      title: 'Hospitality & Wellness',
-      subtitle: 'Welcome. Relax. Inspire.',
-      description: 'Welcome guests, promote services, and create branded experiences in spas, gyms, and hotels.',
-      features: [
-        'Display class schedules, spa services, and facility amenities',
-        'Promote special offers and membership benefits',
-        'Share wellness tips and motivational content',
-        'Provide wayfinding and local area information',
-      ],
-      benefits: 'Guests feel welcomed and informed. Your brand stands out with professional, engaging displays.',
-      color: 'from-teal-500 to-cyan-500',
-    },
-    {
-      category: 'Education',
+      category: 'Patient Engagement',
       icon: '📚',
-      title: 'Libraries & Public Spaces',
-      subtitle: 'Inform. Engage. Connect.',
-      description: 'Display community events, news, or tutorials with interactive signage that\'s easy to update and manage.',
+      title: 'Patient Education',
+      subtitle: 'Knowledge Empowers Better Outcomes',
+      description: 'Visual guides, videos, and interactive modules educate patients about their conditions and treatment plans.',
       features: [
-        'Showcase upcoming events and programs',
-        'Display new arrivals and featured collections',
-        'Provide interactive maps and directories',
-        'Share educational content and resources',
+        'Extensive library of condition-specific educational videos',
+        'Interactive modules on medications, lifestyle changes, and self-care',
+        'Pre- and post-procedure instructions with visual guides',
+        'Multilingual content support',
+        'Email or text educational materials directly to patients',
       ],
-      benefits: 'Visitors stay informed. Staff save time answering repeated questions. Your space feels modern and accessible.',
-      color: 'from-violet-500 to-purple-500',
+      benefits: 'Patients better understand their health. Improved medication adherence. Reduced post-visit phone calls. Better health outcomes.',
+      color: 'from-orange-600 to-amber-600',
     },
     {
-      category: 'Retail',
-      icon: '🚗',
-      title: 'Auto Service Centers',
-      subtitle: 'Educate. Entertain. Upsell.',
-      description: 'Display vehicle features, maintenance tips, and service specials in waiting areas or showrooms—keeping customers informed and engaged.',
+      category: 'Clinical Workflows',
+      icon: '📝',
+      title: 'Digital Patient Forms',
+      subtitle: 'Paperless, Secure, Instant',
+      description: 'Patients complete intake forms, medical history, and consent documents directly on the touchscreen.',
       features: [
-        'Explain common repairs and maintenance schedules',
-        'Promote seasonal services and special offers',
-        'Display service progress updates',
-        'Entertain customers with relevant automotive content',
+        'Digital intake forms auto-populate into EMR/EHR',
+        'Medical history, current medications, allergies captured',
+        'Insurance information and demographic data',
+        'Electronic signature capture for consents',
+        'HIPAA-compliant data encryption and storage',
       ],
-      benefits: 'Customers understand their service needs. Wait time becomes valuable engagement time. Service advisors have more informed conversations.',
-      color: 'from-red-500 to-orange-500',
+      benefits: 'Eliminates paper forms and manual data entry. Reduces errors. Speeds up check-in process. Data flows directly into your EMR system.',
+      color: 'from-teal-600 to-cyan-600',
     },
     {
-      category: 'Education',
-      icon: '🎓',
-      title: 'Institutions & Training Centers',
-      subtitle: 'Educate. Announce. Inspire.',
-      description: 'Share schedules, safety info, or interactive learning content in hallways, lounges, or labs—perfect for both staff and students.',
+      category: 'Patient Engagement',
+      icon: '⭐',
+      title: 'Patient Satisfaction Surveys',
+      subtitle: 'Real-Time Feedback, Actionable Insights',
+      description: 'Collect patient feedback immediately after visits to identify trends and improve care quality.',
       features: [
-        'Display class schedules and room assignments',
-        'Share safety information and emergency procedures',
-        'Highlight student achievements and upcoming events',
-        'Provide interactive learning modules',
+        'Post-visit satisfaction surveys delivered automatically',
+        'Rating scales for provider interaction, wait time, facility cleanliness',
+        'Open-ended feedback for detailed comments',
+        'Real-time dashboard showing satisfaction trends',
+        'Alert notifications for low scores requiring follow-up',
       ],
-      benefits: 'Students and staff stay informed. Campus communication becomes efficient. Your institution projects a modern, organized image.',
-      color: 'from-pink-500 to-rose-500',
+      benefits: 'Higher survey completion rates (collected before patient leaves). Identify issues quickly. Improve patient retention. Boost online reviews.',
+      color: 'from-yellow-600 to-orange-600',
+    },
+    {
+      category: 'Patient Engagement',
+      icon: '🌤️',
+      title: 'News, Weather & Local Info',
+      subtitle: 'Stay Connected During Your Visit',
+      description: 'Keep patients informed and entertained with current news, weather forecasts, and community information.',
+      features: [
+        'Live local weather forecasts and radar',
+        'Curated health news headlines',
+        'Community health events and wellness programs',
+        'Practice announcements and special offers',
+        'Time and date display',
+      ],
+      benefits: 'Patients feel connected and informed. Reduces boredom during wait times. Displays practice as modern and patient-centered.',
+      color: 'from-sky-600 to-blue-600',
+    },
+    {
+      category: 'Documentation',
+      icon: '🤖',
+      title: 'AI Medical Scribe & Summaries',
+      subtitle: 'Give Providers Their Time Back',
+      description: 'AI-powered ambient documentation captures visit details automatically, generating clinical notes and summaries.',
+      features: [
+        'Ambient listening captures patient-provider conversation',
+        'Automatic generation of SOAP notes and clinical summaries',
+        'Chief complaint, HPI, assessment, and plan documented',
+        'Integration with major EMR/EHR systems',
+        'Provider review and edit before finalizing',
+      ],
+      benefits: 'Saves providers 2+ hours daily on documentation. Reduces burnout. Increases face-to-face time with patients. Improves note quality and completeness.',
+      color: 'from-violet-600 to-purple-600',
     },
   ];
 
@@ -162,13 +171,13 @@ export default function UseCases() {
           >
             <div className="inline-block mb-4">
               <span className="px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold">
-                Use Cases
+                Clinical Use Cases
               </span>
             </div>
-            <h1 className="heading-1 mb-6">Is Tactyl.io Right for You?</h1>
+            <h1 className="heading-1 mb-6">9 Technologies, 1 Integrated Platform</h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              From healthcare to hospitality, discover how interactive displays transform 
-              spaces and enhance experiences across diverse industries.
+              Discover how Tactyl.io transforms every aspect of the exam room experience—from clinical 
+              workflows to patient engagement to AI-powered documentation.
             </p>
           </motion.div>
         </div>
@@ -230,7 +239,7 @@ export default function UseCases() {
 
                     {/* Middle Column - Features */}
                     <div className="md:col-span-1">
-                      <h4 className="text-lg font-bold text-gray-900 mb-4">How We Help:</h4>
+                      <h4 className="text-lg font-bold text-gray-900 mb-4">Key Features:</h4>
                       <ul className="space-y-3">
                         {useCase.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-2">
@@ -243,7 +252,7 @@ export default function UseCases() {
 
                     {/* Right Column - Benefits */}
                     <div className="md:col-span-1">
-                      <h4 className="text-lg font-bold text-gray-900 mb-4">Why It Works:</h4>
+                      <h4 className="text-lg font-bold text-gray-900 mb-4">Clinical Benefits:</h4>
                       <div className={`bg-gradient-to-br ${useCase.color} bg-opacity-10 rounded-xl p-6`}>
                         <p className="text-gray-700 leading-relaxed">{useCase.benefits}</p>
                       </div>
@@ -266,16 +275,17 @@ export default function UseCases() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="heading-2 mb-6">See Your Industry Here?</h2>
+            <h2 className="heading-2 mb-6">Ready to Transform Your Exam Rooms?</h2>
             <p className="text-xl mb-8 text-primary-50">
-              Let's discuss how Tactyl.io can be customized for your specific needs and space.
+              Schedule a personalized demo to see how Tactyl.io can enhance your clinical workflows, 
+              improve patient satisfaction, and give your providers their time back.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
                 className="px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 shadow-xl"
               >
-                Get a Free Consultation
+                Schedule a Demo
               </a>
               <a
                 href="/about"

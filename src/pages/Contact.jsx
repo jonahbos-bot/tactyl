@@ -87,10 +87,10 @@ export default function Contact() {
                 Get In Touch
               </span>
             </div>
-            <h1 className="heading-1 mb-6">Let's Transform Your Space</h1>
+            <h1 className="heading-1 mb-6">Let's Transform Your Exam Rooms</h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Ready to bring engaging, interactive displays to your business? We're here to help 
-              you every step of the way—from consultation to installation.
+              Ready to revolutionize patient care with interactive touchscreen technology? We're here to help 
+              you every step of the way—from consultation to installation to ongoing support.
             </p>
           </motion.div>
         </div>
@@ -222,7 +222,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="industry" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Industry *
+                    Practice Type *
                   </label>
                   <select
                     id="industry"
@@ -232,17 +232,17 @@ export default function Contact() {
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all outline-none"
                   >
-                    <option value="">Select your industry</option>
-                    <option value="healthcare">Healthcare & Clinics</option>
-                    <option value="dental">Dental Practices</option>
-                    <option value="pediatric">Pediatric Offices</option>
-                    <option value="corporate">Corporate Offices</option>
-                    <option value="retail">Retail & Showrooms</option>
-                    <option value="hospitality">Hospitality & Wellness</option>
-                    <option value="library">Libraries & Public Spaces</option>
-                    <option value="auto">Auto Service Centers</option>
-                    <option value="education">Institutions & Training</option>
-                    <option value="other">Other</option>
+                    <option value="">Select your practice type</option>
+                    <option value="primary-care">Primary Care / Family Medicine</option>
+                    <option value="internal-medicine">Internal Medicine</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="dermatology">Dermatology</option>
+                    <option value="urgent-care">Urgent Care</option>
+                    <option value="multi-specialty">Multi-Specialty Clinic</option>
+                    <option value="hospital">Hospital / Health System</option>
+                    <option value="other">Other Healthcare</option>
                   </select>
                 </div>
 
