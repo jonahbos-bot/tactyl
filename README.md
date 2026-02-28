@@ -1,8 +1,8 @@
-# Tactyl.io - Interactive Display Solutions Website
+# Tactyl.io - Exam Room Technology Platform
 
-> **Engage. Educate. Scale.**
+> **The Operating System for Modern Exam Rooms**
 
-A modern, responsive React website for Tactyl.io - a turnkey interactive display company serving healthcare, retail, corporate, and educational sectors nationwide.
+A professional, medical-focused React website for Tactyl.io - an enterprise-grade interactive touchscreen platform transforming clinical workflows, patient education, and provider efficiency in healthcare organizations nationwide.
 
 ![Tactyl.io](https://img.shields.io/badge/Built%20with-React%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css)
@@ -29,14 +29,15 @@ This is a professional, production-ready 4-page website showcasing Tactyl.io's i
 
 ### ✨ Key Features
 
+- **Professional Medical Demo** - Custom React component showcasing 6 realistic clinical scenarios
+- **Clinical Use Cases** - Standardized care, 3D anatomy, telemedicine, AI documentation, and more
+- **HIPAA-Compliant Design** - Professional medical interface appropriate for healthcare settings
+- **Automatic Deployment** - GitHub Actions workflow for seamless Azure Static Web Apps deployment
 - **Modern React Architecture** - Component-based structure with React Router for seamless navigation
 - **Smooth Animations** - Framer Motion for engaging page transitions and scroll animations
-- **Responsive Design** - Mobile-first approach with Tailwind CSS
-- **Interactive Product Demo** - Embedded PandaSuite viewer showcasing the product
-- **Industry-Specific Use Cases** - Filterable cards for 9+ industries
-- **Contact Form** - User-friendly form with validation and submission handling
-- **SEO Optimized** - Semantic HTML and meta tags for better search visibility
-- **Azure Ready** - Configured for Azure Static Web Apps with proper routing
+- **Responsive Design** - Mobile-first approach with Tailwind CSS medical color palette
+- **SEO Optimized** - Healthcare-focused semantic HTML and meta tags
+- **Enterprise-Ready** - Professional design suitable for healthcare organizations
 
 ---
 
@@ -46,24 +47,51 @@ This is a professional, production-ready 4-page website showcasing Tactyl.io's i
 tactyl-website/
 ├── public/                   # Static assets
 ├── src/
-│   ├── components/          # Reusable components
-│   │   ├── Header.jsx       # Navigation header with mobile menu
-│   │   ├── Footer.jsx       # Site footer with links
-│   │   └── ScrollToTop.jsx  # Auto-scroll on route change
-│   ├── pages/               # Page components
-│   │   ├── Home.jsx         # Homepage with hero & features
-│   │   ├── About.jsx        # About Us with mission & values
-│   │   ├── UseCases.jsx     # Filterable industry use cases
-│   │   └── Contact.jsx      # Contact form & info
-│   ├── App.jsx              # Main app with routing
-│   ├── main.jsx             # React entry point
-│   └── index.css            # Global styles & Tailwind
-├── index.html               # HTML entry point
-├── package.json             # Dependencies
-├── vite.config.js           # Vite configuration
-├── tailwind.config.js       # Tailwind customization
-└── postcss.config.js        # PostCSS configuration
+│   ├── components/                        # Reusable components
+│   │   ├── Header.jsx                     # Navigation header with mobile menu
+│   │   ├── Footer.jsx                     # Site footer with links
+│   │   ├── ScrollToTop.jsx                # Auto-scroll on route change
+│   │   └── ProfessionalMedicalDemo.jsx    # Professional clinical demo (6 scenarios)
+│   ├── pages/                             # Page components
+│   │   ├── Home.jsx                       # Homepage with hero & medical demo
+│   │   ├── About.jsx                      # About Us - healthcare focused
+│   │   ├── UseCases.jsx                   # 9 clinical use cases
+│   │   └── Contact.jsx                    # Contact form for healthcare orgs
+│   ├── App.jsx                            # Main app with routing
+│   ├── main.jsx                           # React entry point
+│   └── index.css                          # Global styles & Tailwind
+├── .github/
+│   └── workflows/
+│       └── azure-static-web-apps.yml      # Automatic deployment workflow
+├── index.html                             # HTML entry point
+├── package.json                           # Dependencies
+├── vite.config.js                         # Vite configuration
+├── tailwind.config.js                     # Tailwind with medical color palette
+└── postcss.config.js                      # PostCSS configuration
 ```
+
+---
+
+## 🚀 Quick Start - Deployment
+
+### For New Deployment:
+
+1. **Set up GitHub Actions (ONE TIME):**
+   - Get deployment token from Azure Portal (your Static Web App → Manage deployment token)
+   - Add to GitHub: `Settings` → `Secrets` → `New repository secret`
+   - Name: `AZURE_STATIC_WEB_APPS_API_TOKEN`
+   - Value: (paste token)
+
+2. **Deploy:**
+   ```bash
+   git add .
+   git commit -m "Deploy to Azure"
+   git push
+   ```
+
+3. **Wait 3-5 minutes** → Your site is live!
+
+**📖 Detailed Guide:** See [COMPLETE_DEPLOYMENT_GUIDE.md](COMPLETE_DEPLOYMENT_GUIDE.md)
 
 ---
 
