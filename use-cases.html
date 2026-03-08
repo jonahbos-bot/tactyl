@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinical Use Cases – Tactyl.io</title>
+  <meta name="description" content="Explore Tactyl.io's nine integrated clinical technologies: standardized care protocols, 3D anatomy visualization, AI medical scribe, telemedicine, patient education, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-svg" width="48" height="48" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="72" height="72" rx="16" fill="#1a3a5c"/>
+          <rect x="10" y="10" width="60" height="60" rx="11" fill="#0f2540"/>
+          <polyline points="14,40 22,40 26,26 30,54 34,32 38,48 42,40 50,40 54,33 58,40 66,40"
+            stroke="#7ECAE0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="34" cy="32" r="5" stroke="#2ab5c8" stroke-width="2" fill="none" opacity="0.7"/>
+          <circle cx="34" cy="32" r="2" fill="#2ab5c8"/>
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-name">Tactyl.io</span>
+          <span class="logo-tagline">Engage, Educate &amp; Scale</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="use-cases.html" class="nav-link active">Use Cases</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn-nav-cta">Get a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container text-center">
+      <span class="page-badge">Clinical Use Cases</span>
+      <h1 class="page-title">Nine Technologies, One Integrated Platform</h1>
+      <p class="page-desc">Discover how Tactyl.io transforms every aspect of the exam room experience—from clinical workflows to patient engagement to AI-powered documentation.</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterCards('all', this)">All</button>
+        <button class="filter-tab" onclick="filterCards('clinical', this)">Clinical Workflows</button>
+        <button class="filter-tab" onclick="filterCards('engagement', this)">Patient Engagement</button>
+        <button class="filter-tab" onclick="filterCards('provider', this)">Provider Tools</button>
+        <button class="filter-tab" onclick="filterCards('documentation', this)">Documentation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- USE CASES LIST -->
+  <section class="section section-white">
+    <div class="container use-cases-list">
+
+      <!-- 1: Standardized Care Protocols -->
+      <div class="use-case-card" data-category="clinical">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#e8f4f8,#c5e3f0);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="5" width="20" height="26" rx="2" stroke="#1a7f9c" stroke-width="2"/><path d="M13 13l2 2 4-4M13 20l2 2 4-4M13 27l2 2 4-4" stroke="#1a7f9c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2 class="uc-title">Standardized Care Protocols</h2>
+          <p class="uc-tagline">Consistent, Evidence-Based Care</p>
+          <p class="uc-desc">Deliver standardized care across all exam rooms with built-in clinical protocols, checklists, and customizable workflows.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Pre-loaded evidence-based care protocols for common conditions</li>
+            <li>Interactive checklists ensure nothing is missed during exams</li>
+            <li>Customizable workflows specific to your practice specialties</li>
+            <li>Real-time guidance for providers on best practices</li>
+            <li>Audit trails for compliance and quality assurance</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Reduces practice variation and ensures every patient receives consistent, high-quality care. Improves clinical outcomes and reduces liability risk.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: 3D Anatomy -->
+      <div class="use-case-card" data-category="engagement">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#fce8e8,#f5c6c6);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="12" r="6" stroke="#c0392b" stroke-width="2"/><path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#c0392b" stroke-width="2" stroke-linecap="round"/><path d="M14 24l-3 6M26 24l3 6" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="12" r="2.5" fill="#c0392b"/></svg>
+          </div>
+          <h2 class="uc-title">3D Anatomy &amp; Procedure Visualization</h2>
+          <p class="uc-tagline">See It. Understand It. Remember It.</p>
+          <p class="uc-desc">Interactive 3D anatomical models help patients truly understand their bodies, conditions, and treatment options.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Comprehensive 3D anatomical library (skeletal, muscular, cardiovascular, and digestive systems)</li>
+            <li>Touch to rotate, zoom, and explore structures from any angle</li>
+            <li>Procedure animations show step-by-step surgical and diagnostic processes</li>
+            <li>Highlight specific areas to explain pathology or surgical approaches</li>
+            <li>Side-by-side comparisons of healthy versus diseased anatomy</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Patients better understand their conditions, leading to improved treatment compliance and satisfaction. Visual education reduces anxiety and builds trust.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Remote Screen Share -->
+      <div class="use-case-card" data-category="clinical provider">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#ede8f8,#d0c6ee);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="6" stroke="#7c3aed" stroke-width="2"/><path d="M10 10l4.5 4.5M25.5 25.5l4.5 4.5M30 10l-4.5 4.5M14.5 25.5L10 30" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="20" r="11" stroke="#7c3aed" stroke-width="1" stroke-dasharray="2 3"/></svg>
+          </div>
+          <h2 class="uc-title">Remote Screen Share &amp; Collaboration</h2>
+          <p class="uc-tagline">Expert Consults, Instantly</p>
+          <p class="uc-desc">Connect with remote specialists, share screens, and collaborate on diagnoses in real time without leaving the exam room.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>One-click screen sharing with remote specialists</li>
+            <li>Live video consultation with the patient present</li>
+            <li>Share imaging, lab results, and patient records securely</li>
+            <li>Real-time annotations and markup tools</li>
+            <li>Recorded sessions for documentation and review</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Access specialist expertise immediately. Improved diagnostic accuracy. Reduced referral delays. Patients appreciate collaborative care in action.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Patient Entertainment -->
+      <div class="use-case-card" data-category="engagement">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="9" width="30" height="20" rx="3" stroke="#166534" stroke-width="2"/><path d="M16 17l9 5-9 5V17z" fill="#166534" fill-opacity="0.25" stroke="#166534" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 33h20" stroke="#166534" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h2 class="uc-title">Patient Entertainment</h2>
+          <p class="uc-tagline">Reduce Anxiety, Improve the Experience</p>
+          <p class="uc-desc">Calming, engaging content keeps patients comfortable and reduces perceived wait time.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Curated content library: nature videos, music, and documentaries</li>
+            <li>Patient-controlled content selection via touchscreen</li>
+            <li>Age-appropriate content filtering (pediatric and adult)</li>
+            <li>Live news, weather, and local information</li>
+            <li>Practice-branded content and welcome messages</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Reduced patient anxiety. Shorter perceived wait times. Higher patient experience scores. Engaged patients are more compliant patients.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Patient Education -->
+      <div class="use-case-card" data-category="engagement">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#fff8e1,#ffe082);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 7L5 15l15 8 15-8-15-8z" stroke="#92400e" stroke-width="2" stroke-linejoin="round"/><path d="M10 19v8c0 3 4.5 6 10 6s10-3 10-6v-8" stroke="#92400e" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h2 class="uc-title">Patient Education</h2>
+          <p class="uc-tagline">Knowledge Empowers Better Outcomes</p>
+          <p class="uc-desc">Visual guides, videos, and interactive modules educate patients about their conditions and treatment plans.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Extensive library of condition-specific educational videos</li>
+            <li>Interactive modules on medications, lifestyle changes, and self-care</li>
+            <li>Pre- and post-procedure instructions with visual guides</li>
+            <li>Multilingual content support</li>
+            <li>Email or text educational materials directly to patients</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Patients better understand their health. Improved medication adherence. Fewer post-visit phone calls. Better long-term health outcomes.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Digital Patient Forms -->
+      <div class="use-case-card" data-category="clinical documentation">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="5" width="22" height="28" rx="2" stroke="#1565c0" stroke-width="2"/><path d="M12 13h12M12 18h12M12 23h8" stroke="#1565c0" stroke-width="1.5" stroke-linecap="round"/><rect x="24" y="26" width="10" height="10" rx="2" fill="white" stroke="#1565c0" stroke-width="1.5"/><path d="M27 31l2 2 4-4" stroke="#1565c0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2 class="uc-title">Digital Patient Forms</h2>
+          <p class="uc-tagline">Paperless, Secure, and Instant</p>
+          <p class="uc-desc">Patients complete intake forms, medical history, and consent documents directly on the touchscreen.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Digital intake forms auto-populate into EMR/EHR systems</li>
+            <li>Medical history, current medications, and allergy information captured</li>
+            <li>Insurance and demographic data collection</li>
+            <li>Electronic signature capture for consent forms</li>
+            <li>HIPAA-compliant data encryption and storage</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Eliminates paper forms and manual data entry. Reduces errors. Speeds up the check-in process. Data flows directly into your EMR system.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Patient Satisfaction Surveys -->
+      <div class="use-case-card" data-category="provider engagement">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="13" stroke="#9d174d" stroke-width="2"/><path d="M14 20l4 4 8-8" stroke="#9d174d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2 class="uc-title">Patient Satisfaction Surveys</h2>
+          <p class="uc-tagline">Real-Time Feedback, Actionable Insights</p>
+          <p class="uc-desc">Collect patient feedback immediately after visits to identify trends and continuously improve care quality.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Post-visit satisfaction surveys delivered automatically</li>
+            <li>Rating scales for provider interaction, wait time, and cleanliness</li>
+            <li>Open-ended feedback for detailed patient comments</li>
+            <li>Real-time dashboard showing satisfaction trends</li>
+            <li>Alert notifications for low scores requiring follow-up</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Higher survey completion rates (collected before the patient leaves). Identify issues quickly. Improve patient retention and boost online reviews.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8: News, Weather & Local Info -->
+      <div class="use-case-card" data-category="engagement">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="16" r="6" stroke="#0e7490" stroke-width="2"/><path d="M20 8V6M28 16h2M20 24v2M12 16h-2" stroke="#0e7490" stroke-width="1.5" stroke-linecap="round"/><path d="M11 31a4 4 0 010-8h.6A7 7 0 0124 25a4 4 0 010 8H11" stroke="#0e7490" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2 class="uc-title">News, Weather &amp; Local Info</h2>
+          <p class="uc-tagline">Stay Informed During Your Visit</p>
+          <p class="uc-desc">Keep patients informed and entertained with current news, weather forecasts, and community information.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Live local weather forecasts and radar</li>
+            <li>Curated health news headlines</li>
+            <li>Community health events and wellness programs</li>
+            <li>Practice announcements and special offerings</li>
+            <li>Time and date display</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Patients feel connected and informed. Reduces boredom during wait times. Positions your practice as modern and patient-centered.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9: AI Medical Scribe -->
+      <div class="use-case-card" data-category="provider documentation">
+        <div class="uc-left">
+          <div class="uc-icon-wrap" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9);">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="14" width="24" height="18" rx="3" stroke="#3730a3" stroke-width="2"/><circle cx="15" cy="23" r="2.5" stroke="#3730a3" stroke-width="1.5"/><circle cx="25" cy="23" r="2.5" stroke="#3730a3" stroke-width="1.5"/><path d="M15 29h10" stroke="#3730a3" stroke-width="1.5" stroke-linecap="round"/><path d="M20 14V8M16 8h8" stroke="#3730a3" stroke-width="1.5" stroke-linecap="round"/><path d="M8 21H5M32 21h3" stroke="#3730a3" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h2 class="uc-title">AI Medical Scribe &amp; Summaries</h2>
+          <p class="uc-tagline">Give Providers Their Time Back</p>
+          <p class="uc-desc">AI-powered ambient documentation captures visit details automatically, generating clinical notes and summaries.</p>
+        </div>
+        <div class="uc-center">
+          <h4>Key Features:</h4>
+          <ul class="uc-features">
+            <li>Ambient listening captures the patient-provider conversation</li>
+            <li>Automatic generation of SOAP notes and clinical summaries</li>
+            <li>Chief complaint, HPI, assessment, and plan documented</li>
+            <li>Integration with major EMR/EHR systems</li>
+            <li>Provider review and edit before finalizing notes</li>
+          </ul>
+        </div>
+        <div class="uc-right">
+          <h4>Clinical Benefits:</h4>
+          <div class="clinical-benefits">
+            <svg class="cb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Saves providers more than two hours daily on documentation. Reduces burnout. Increases face-to-face time with patients. Improves note quality and completeness.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-cta">
+    <div class="container text-center">
+      <h2 class="cta-title">Ready to Transform Your Exam Rooms?</h2>
+      <p class="cta-desc">Schedule a personalized demo to see how Tactyl.io can enhance your clinical workflows, improve patient satisfaction, and give your providers their time back.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-cta-white">
+          Schedule a Demo
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 6l5 4-5 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="about.html" class="btn-cta-outline">Learn More About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo-wrap">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="72" height="72" rx="16" fill="#1a3a5c"/>
+            <rect x="10" y="10" width="60" height="60" rx="11" fill="#0f2540"/>
+            <polyline points="14,40 22,40 26,26 30,54 34,32 38,48 42,40 50,40 54,33 58,40 66,40" stroke="#7ECAE0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="32" r="5" stroke="#2ab5c8" stroke-width="2" fill="none" opacity="0.7"/>
+            <circle cx="34" cy="32" r="2" fill="#2ab5c8"/>
+          </svg>
+          <div>
+            <div class="footer-logo-name">Tactyl.io</div>
+            <div class="footer-logo-tagline">Engage, Educate &amp; Scale</div>
+          </div>
+        </a>
+        <p class="footer-copy">The Operating System for Modern Exam Rooms</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="use-cases.html">Use Cases</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="30" height="22" rx="3"/><path d="M5 13l15 10 15-10" stroke-linecap="round"/></svg> <a href="mailto:info@tactyl.io">info@tactyl.io</a></p>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 8h8l3 7-4 2.5a18 18 0 007.5 7.5L25 21l7 3v8a2 2 0 01-2 2C13 34 6 17 6 10a2 2 0 012-2z" stroke-linejoin="round"/></svg> <a href="tel:+15083333863">508.333.3863</a></p>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4C14.477 4 10 8.477 10 14c0 7.5 10 22 10 22s10-14.5 10-22c0-5.523-4.477-10-10-10z"/><circle cx="20" cy="14" r="4"/></svg> New England Based &middot; Nationwide</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tactyl.io &middot; All rights reserved &middot; HIPAA-Compliant Platform</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

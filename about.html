@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Tactyl.io</title>
+  <meta name="description" content="Learn about Tactyl.io — founded by New England healthcare innovators to modernize exam rooms with an all-in-one interactive touchscreen platform. Serving 2,500+ exam rooms nationwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <svg class="logo-svg" width="48" height="48" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="72" height="72" rx="16" fill="#1a3a5c"/>
+          <rect x="10" y="10" width="60" height="60" rx="11" fill="#0f2540"/>
+          <polyline points="14,40 22,40 26,26 30,54 34,32 38,48 42,40 50,40 54,33 58,40 66,40"
+            stroke="#7ECAE0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="34" cy="32" r="5" stroke="#2ab5c8" stroke-width="2" fill="none" opacity="0.7"/>
+          <circle cx="34" cy="32" r="2" fill="#2ab5c8"/>
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-name">Tactyl.io</span>
+          <span class="logo-tagline">Engage, Educate &amp; Scale</span>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="use-cases.html" class="nav-link">Use Cases</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn-nav-cta">Get a Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container text-center">
+      <span class="page-badge">About Tactyl.io</span>
+      <h1 class="page-title">Revolutionizing Healthcare,<br>One Exam Room at a Time</h1>
+      <p class="page-desc">At Tactyl.io, we believe every patient deserves exceptional care, and every provider deserves technology that works for them—not against them.</p>
+    </div>
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="about-mission-grid">
+        <div class="mission-text">
+          <h2 class="section-heading-left">Our Mission</h2>
+          <p>Founded by healthcare innovators in New England, Tactyl.io was born from a simple observation: exam rooms had not changed in decades, yet technology had transformed every other aspect of modern life.</p>
+          <p>We set out to create an all-in-one interactive touchscreen platform specifically for healthcare—combining patient education, 3D anatomy visualization, remote collaboration, AI documentation, and more into a single, elegant solution.</p>
+          <p>Today, we partner with forward-thinking healthcare organizations nationwide to standardize care, empower patients, and give providers their time back through intelligent automation.</p>
+        </div>
+        <div class="vision-card">
+          <div class="vision-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="3" fill="currentColor"/><path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Our Vision</h3>
+          <p>Transform every exam room in America into an intelligent, patient-centered space where technology enhances human connection rather than replacing it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT SETS US APART -->
+  <section class="section section-gray">
+    <div class="container">
+      <span class="section-eyebrow">Our Advantage</span>
+      <h2 class="section-title">What Sets Us Apart</h2>
+      <p class="section-subtitle">We're not just a technology vendor—we're your partner in transforming healthcare delivery.</p>
+      <div class="differentiators-grid">
+
+        <div class="diff-card fade-in">
+          <div class="diff-icon-wrap teal">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="12" width="30" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 22h30" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M15 36V26h10v10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 12V8a7 7 0 0114 0v4" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 17v6M15 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Healthcare-First Design</h3>
+          <p>Built specifically for clinical environments with HIPAA-compliant architecture and healthcare workflows that integrate seamlessly.</p>
+        </div>
+
+        <div class="diff-card fade-in">
+          <div class="diff-icon-wrap navy">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 34c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 10h8M20 7v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Clinical Expertise</h3>
+          <p>Developed in partnership with physicians, nurses, and healthcare administrators who understand real-world clinical needs.</p>
+        </div>
+
+        <div class="diff-card fade-in">
+          <div class="diff-icon-wrap teal">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="24" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="15" cy="23" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="25" cy="23" r="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M15 29h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 14V8M16 8h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 21H5M32 21h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>AI-Powered Innovation</h3>
+          <p>Cutting-edge AI technology for automated documentation, transcription, and clinical summaries that save providers hours each day.</p>
+        </div>
+
+        <div class="diff-card fade-in">
+          <div class="diff-icon-wrap navy">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="28" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="20" cy="28" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M17 12h6M15 16l-3 9M25 16l3 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Seamless Integration</h3>
+          <p>Works with your existing EMR/EHR systems. No disruption to established workflows or unnecessary retraining burdens.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY / TIMELINE -->
+  <section class="section section-white">
+    <div class="container">
+      <span class="section-eyebrow">Our Story</span>
+      <h2 class="section-title">Our Journey</h2>
+      <p class="section-subtitle">From one clinic to serving healthcare organizations nationwide.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Founded</span>
+            <h3>Healthcare Innovation Begins</h3>
+            <p>Started with a vision: transform exam rooms with interactive touchscreen technology that empowers both providers and patients across New England.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Early Growth</span>
+            <h3>First 100 Exam Rooms</h3>
+            <p>Deployed in New England clinics, proving that standardized care protocols and patient engagement tools significantly improve outcomes and satisfaction scores.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Platform Expansion</span>
+            <h3>Nine Technologies in One Platform</h3>
+            <p>Launched the full enterprise suite, including AI Medical Scribe, 3D Anatomy visualization, telemedicine integration, digital patient forms, and more.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Today</span>
+            <h3>2,500+ Exam Rooms Nationwide</h3>
+            <p>Partnering with leading healthcare organizations across the United States to modernize clinical operations and deliver exceptional patient experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-cta">
+    <div class="container text-center">
+      <h2 class="cta-title">Ready to Join the Future of Healthcare?</h2>
+      <p class="cta-desc">Let's talk about how Tactyl.io can transform your clinical operations, reduce provider burnout, and improve patient outcomes.</p>
+      <a href="contact.html" class="btn-cta-white">
+        Get in Touch
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M11 6l5 4-5 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo-wrap">
+          <svg width="36" height="36" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="72" height="72" rx="16" fill="#1a3a5c"/>
+            <rect x="10" y="10" width="60" height="60" rx="11" fill="#0f2540"/>
+            <polyline points="14,40 22,40 26,26 30,54 34,32 38,48 42,40 50,40 54,33 58,40 66,40" stroke="#7ECAE0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="34" cy="32" r="5" stroke="#2ab5c8" stroke-width="2" fill="none" opacity="0.7"/>
+            <circle cx="34" cy="32" r="2" fill="#2ab5c8"/>
+          </svg>
+          <div>
+            <div class="footer-logo-name">Tactyl.io</div>
+            <div class="footer-logo-tagline">Engage, Educate &amp; Scale</div>
+          </div>
+        </a>
+        <p class="footer-copy">The Operating System for Modern Exam Rooms</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="use-cases.html">Use Cases</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="30" height="22" rx="3"/><path d="M5 13l15 10 15-10" stroke-linecap="round"/></svg> <a href="mailto:info@tactyl.io">info@tactyl.io</a></p>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 8h8l3 7-4 2.5a18 18 0 007.5 7.5L25 21l7 3v8a2 2 0 01-2 2C13 34 6 17 6 10a2 2 0 012-2z" stroke-linejoin="round"/></svg> <a href="tel:+15083333863">508.333.3863</a></p>
+        <p><svg width="14" height="14" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4C14.477 4 10 8.477 10 14c0 7.5 10 22 10 22s10-14.5 10-22c0-5.523-4.477-10-10-10z"/><circle cx="20" cy="14" r="4"/></svg> New England Based &middot; Nationwide</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Tactyl.io &middot; All rights reserved &middot; HIPAA-Compliant Platform</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
